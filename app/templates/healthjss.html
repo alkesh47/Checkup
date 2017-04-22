@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> CheckupPal </title>
+    <style>
+
+      .head{
+        height: 50px;
+        width: 100%;
+        background-color: blue;
+        margin: 0px;
+        text-align: center;
+        padding-top: 20px
+
+      }
+      h3{
+        margin: 0px;
+        color: white;
+      }
+        body{
+         background: linear-gradient(to bottom right,white,#bcbdc4);
+    /*height: 4000px;*/
+    margin: 0
+        }
+}
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        span{
+            font-size: 20px;
+        }
+        ul{
+            list-style: none;
+        }
+        .page1{
+            width: 100%;
+            height: 200px;
+        }
+        #submit{
+            width: 60px;
+            height: 40px;
+            border-radius: 4px;
+        }
+    </style>
+    </head>
+<header>
+  <div class="head">
+    <h3>CheckupPal</h3>
+  </div>
+</header>
+<body>
+    <form action="" method="post">
+       <ul>
+           <div class="page1">
+           <li> <spen> GENERAL </spen> </li> <br> <hr>
+               <table>
+                   <tr><td> AGE:- </td><td><input type="text" name="age" id="age"></td> </tr>
+                   <tr><td> SEX:- </td><td><input type="radio" name="m" id="male"> Male <input type="radio" name="m" id=" female"> Female </td></tr>
+                   <tr><td> HEIGHT:- </td><td><input type="text" name="height" id="height"> ft/in </td></tr>
+                   <tr><td>WEIGHT:- </td><td><input type="text" name="weight" id="weight"> lbs </td></tr>
+               </table>
+           </div>
+           <li> <spen> SMOKING </spen> </li> <br> <hr>
+           <li> 1.	Do you smoke? </li>
+           <li> <input type="radio" id="mm1" name="smoke"> Yes &nbsp;&nbsp;&nbsp;
+               <input type="radio" id="mm12" name="smoke"> No </li>
+           <br>
+           <br>
+           <li> 1a.	How keen are you to stop smoking? (please circle) </li> &nbsp;&nbsp;
+           <li> 0	1	2	3	4	5	6	7 </li>
+           <br>
+           <br>
+           <li> 1b.	When you wake up each day, how soon do you smoke your first cigarette? </li>
+           <li> <input type="radio" id="nn11" name="smoking1"> &nbsp;&nbsp More than 60 minutes </li>
+           <li> <input type="radio" id="nn12" name="smoking1" > &nbsp;&nbsp 31-60 minutes </li>
+           <li> <input type="radio" id="nn13" name="smoking1"> &nbsp;&nbsp 5-30 minutes </li>
+           <li> <input type="radio" id="nn14" name="smoking1" > &nbsp;&nbsp Less than 5 minutes</li>
+           <br>
+           <br>
+           <li> 1c.	How many cigarettes do you smoke on a typical day? </li>
+           <li> <input type="radio" id="nn21" name="smoking2"> &nbsp;&nbsp 10 or less </li>
+           <li> <input type="radio" id="nn22" name="smoking2"> &nbsp;&nbsp 11 - 20 </li>
+           <li> <input type="radio" id="nn23" name="smoking2"> &nbsp;&nbsp 21 - 30 </li>
+           <li> <input type="radio" id="nn24" name="smoking2"> &nbsp;&nbsp More than 30 </li>
+            <br>
+          <br>
+           <li> <spen> NUTRITION </spen> </li> <br> <hr>
+           <li> 1.	During working hours, how many days of the week do you usually eat junk foods that are high in fat, salt or sugar (such as deep fried foods, hot  chips, pies pastries, chocolates, lollies, etc)? </li>
+           <li>
+            <li> <input type="radio" id="x11" name="smoking3"> &nbsp;&nbsp	None </li>
+           <li> <input type="radio" id="x12" name="smoking3" > &nbsp;&nbsp 	One day </li>
+           <li> <input type="radio" id="x13" name="smoking3"> &nbsp;&nbsp Three days </li>
+           <li> <input type="radio" id="x14" name="smoking3" > &nbsp;&nbsp Five days</li>
+            <li> <input type="radio" id="x15" name="smoking3" > &nbsp;&nbsp Seven days</li>
+           </li>
+           <br>
+           <br>
+         <li> 2.	How many serves of fruit (including fresh, frozen and tinned fruit) do you usually eat each day? </li>
+           <li>
+            <li> <input type="radio" id="y11" name="smoking4"> &nbsp;&nbsp	One serve or less    </li>
+           <li> <input type="radio" id="y12" name="smoking4" > &nbsp;&nbsp	Two serves </li>
+           <li> <input type="radio" id="y13" name="smoking4"> &nbsp;&nbsp Three or more serves </li>
+           <li> <input type="radio" id="y14" name="smoking4" > &nbsp;&nbsp Don’t eat fruit</li>
+           </li>
+           <br>
+           <br>
+        <li> <spen> PHYSICAL ACTIVITY </spen> </li> <br> <hr>
+            <li> 1.	How many times a week do you usually do: </li><br>
+        <li> a)	20 minutes or more of vigorous-intensity physical activity that makes you sweat or puff and pant (for example, heavy lifting, digging or jogging)?</li>
+           <li>
+               &nbsp;&nbsp
+            <li> <input type="radio" id="a11" name="smoking5"> &nbsp;&nbsp	1
+           <input type="radio" id="a12" name="smoking5" > &nbsp;&nbsp 	2
+           <input type="radio" id="a13" name="smoking5"> &nbsp;&nbsp 3
+            <input type="radio" id="a14" name="smoking5" > &nbsp;&nbsp 4
+             <input type="radio" id="a15" name="smoking5" > &nbsp;&nbsp 5
+                <input type="radio" id="a16" name="smoking5" > &nbsp;&nbsp 6
+                <input type="radio" id="a17" name="smoking5" > &nbsp;&nbsp 7+times
+           </li>
+           <br>
+           <br>
+           <li> b)	30 minutes or more of walking (for example, walking from place to place for exercise or recreation)?</li>
+            <li>
+               &nbsp;&nbsp
+            <li> <input type="radio" id="b11" name="smoking6"> &nbsp;&nbsp	1
+           <input type="radio" id="b12" name="smoking6" > &nbsp;&nbsp 	2
+           <input type="radio" id="b13" name="smoking6"> &nbsp;&nbsp 3
+            <input type="radio" id="b14" name="smoking6" > &nbsp;&nbsp 4
+             <input type="radio" id="b15" name="smoking6" > &nbsp;&nbsp 5
+                <input type="radio" id="b16" name="smoking6" > &nbsp;&nbsp 6
+                <input type="radio" id="b17" name="smoking6" > &nbsp;&nbsp 7+times
+           </li>
+           <br>
+           <br>
+            <li> c)	30 minutes or more of other moderate-intensity physical activity that increases your heart rate or makes you breathe harder than normal (for example, carrying light loads, slow cycling)?</li>
+            <li>
+               &nbsp;&nbsp
+            <li> <input type="radio" id="c11" name="smoking7"> &nbsp;&nbsp	1
+           <input type="radio" id="c12" name="smoking7" > &nbsp;&nbsp 	2
+           <input type="radio" id="c13" name="smoking7"> &nbsp;&nbsp 3
+            <input type="radio" id="c14" name="smoking7" > &nbsp;&nbsp 4
+             <input type="radio" id="c15" name="smoking7" > &nbsp;&nbsp 5
+                <input type="radio" id="c16" name="smoking7" > &nbsp;&nbsp 6
+                <input type="radio" id="c17" name="smoking7" > &nbsp;&nbsp 7+times
+           </li>
+           <br>
+           <br>
+            <li> 2. How much of your total activity occurs in work time? (Work time does include travelling to and from work.) </li>
+           <li> <input type="radio" id="d11" name="smoking8"> &nbsp;&nbsp None </li>
+           <li> <input type="radio" id="d12" name="smoking8" > &nbsp;&nbsp Some </li>
+           <li> <input type="radio" id="d13" name="smoking8"> &nbsp;&nbsp Most </li>
+           <li> <input type="radio" id="d14" name="smoking8" > &nbsp;&nbsp All</li>
+           <br>
+           <br>
+            <br><br><br>
+    <li> <spen> <b>CANCER</b> </spen> </li> <br> <hr>
+    <table>
+        <tr>
+            <td>Bowel Changes</td>
+            <td><input type="radio" id="p1" name="cancer1" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="cancer1" > &nbsp;&nbsp No
+            </td>
+         </tr>
+        <tr>
+            <td>Rectal Bleeding</td>
+            <td><input type="radio" id="p1" name="cancer2" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="cancer2" > &nbsp;&nbsp No
+            </td>
+         </tr>
+        <tr>
+            <td>Urinaty Changes</td>
+            <td><input type="radio" id="p1" name="cancer3" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="cancer3" > &nbsp;&nbsp No
+            </td>
+         </tr>
+        <tr>
+            <td>Blood in Urine</td>
+            <td><input type="radio" id="p1" name="cancer4" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="cancer4" > &nbsp;&nbsp No
+            </td>
+         </tr>
+        <tr>
+            <td>Persistent back pain</td>
+            <td><input type="radio" id="p1" name="cancer5" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="cancer5" > &nbsp;&nbsp No
+            </td>
+         </tr>
+        <tr>
+            <td>Unusual Coughing </td>
+            <td><input type="radio" id="p1" name="cancer6" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="cancer6" > &nbsp;&nbsp No
+            </td>
+         </tr>
+        <tr>
+            <td>Testicular lumps</td>
+            <td><input type="radio" id="p1" name="cancer7" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="cancer7" > &nbsp;&nbsp No
+            </td>
+         </tr>
+        <tr>
+            <td>Excessive Fatigue</td>
+            <td><input type="radio" id="p1" name="cancer8" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="cancer8" > &nbsp;&nbsp No
+            </td>
+         </tr>
+        <tr>
+            <td>Unexplained Weight loss</td>
+            <td><input type="radio" id="p1" name="cancer9" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="cancer9" > &nbsp;&nbsp No
+            </td>
+         </tr>
+        <tr>
+            <td>Lumps in breast</td>
+            <td><input type="radio" id="p1" name="cancer10" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="cancer10" > &nbsp;&nbsp No
+            </td>
+         </tr>
+    </table><br><br><br>
+    <li> <spen> <b>CHOLESTROL</b> </spen> </li> <br> <hr>
+    <table>
+        <tr>
+            <td>High blood pressure</td>
+            <td><input type="radio" id="p1" name="CHOLESTROL1" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="CHOLESTROL1" > &nbsp;&nbsp No
+            </td>
+         </tr>
+        <tr>
+            <td>Over Weight </td>
+            <td><input type="radio" id="p1" name="CHOLESTROL2" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="CHOLESTROL2" > &nbsp;&nbsp No
+            </td>
+         </tr>
+        <tr>
+            <td>Smoke</td>
+            <td><input type="radio" id="p1" name="CHOLESTROL3" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="CHOLESTROL3" > &nbsp;&nbsp No
+            </td>
+         </tr>
+        <tr>
+            <td>Nausea</td>
+            <td><input type="radio" id="p1" name="CHOLESTROL4" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="CHOLESTROL4" > &nbsp;&nbsp No
+            </td>
+         </tr>
+        <tr>
+            <td>Shortness of Breath</td>
+            <td><input type="radio" id="p1" name="CHOLESTROL5" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="CHOLESTROL5" > &nbsp;&nbsp No
+            </td>
+         </tr>
+        <tr>
+            <td>Pain in back </td>
+            <td><input type="radio" id="p1" name="CHOLESTROL6" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="CHOLESTROL6" > &nbsp;&nbsp No
+            </td>
+         </tr>
+        <tr>
+            <td>Coldness</td>
+            <td><input type="radio" id="p1" name="CHOLESTROL7" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="CHOLESTROL7" > &nbsp;&nbsp No
+            </td>
+         </tr>
+        <tr>
+            <td>Sudden loss of balance and co-ordination</td>
+            <td><input type="radio" id="p1" name="CHOLESTROL8" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="CHOLESTROL8" > &nbsp;&nbsp No
+            </td>
+         </tr>
+        <tr>
+            <td>Sudden dizziness</td>
+            <td><input type="radio" id="p1" name=CHOLESTROLr9" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name=CHOLESTROLr9" > &nbsp;&nbsp No
+            </td>
+         </tr>
+        <tr>
+            <td>Slurring Words</td>
+            <td><input type="radio" id="p1" name="CHOLESTROL10" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="CHOLESTROL10" > &nbsp;&nbsp No
+            </td>
+         </tr>
+    </table>
+
+    <br><br><br>
+    <li> <spen> <b>DIABETES</b> </spen> </li> <br> <hr>
+    <table>
+        <tr>
+            <td>45+ Age</td>
+            <td><input type="radio" id="p1" name="DIABETES1" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="DIABETES1" > &nbsp;&nbsp No
+            </td>
+         </tr>
+        <tr>
+            <td>Hunger and Fatigue </td>
+            <td><input type="radio" id="p1" name="DIABETES2" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="DIABETES2" > &nbsp;&nbsp No
+            </td>
+         </tr>
+        <tr>
+            <td>Being thisty & peeing more often </td>
+            <td><input type="radio" id="p1" name="DIABETES3" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="DIABETES3" > &nbsp;&nbsp No
+            </td>
+         </tr>
+        <tr>
+            <td>Dry month & itchy skin </td>
+            <td><input type="radio" id="p1" name="DIABETES4" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="DIABETES4" > &nbsp;&nbsp No
+            </td>
+         </tr>
+        <tr>
+            <td>Blurred vission</td>
+            <td><input type="radio" id="p1" name="DIABETES5" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="DIABETES5" > &nbsp;&nbsp No
+            </td>
+         </tr>
+        <tr>
+            <td>Slow healing of cut</td>
+            <td><input type="radio" id="p1" name="DIABETES6" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="DIABETES6" > &nbsp;&nbsp No
+            </td>
+         </tr>
+        <tr>
+            <td>Pain & numbness in feet</td>
+            <td><input type="radio" id="p1" name="DIABETES7" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="DIABETES7" > &nbsp;&nbsp No
+            </td>
+         </tr>
+        <tr>
+            <td>Unplanned wieght lost </td>
+            <td><input type="radio" id="p1" name="DIABETES8" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="DIABETES8" > &nbsp;&nbsp No
+            </td>
+         </tr>
+        <tr>
+            <td>Vomiting</td>
+            <td><input type="radio" id="p1" name="DIABETES9" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="DIABETES9" > &nbsp;&nbsp No
+            </td>
+         </tr>
+        <tr>
+            <td>Breathing more deeply & Faster</td>
+            <td><input type="radio" id="p1" name="DIABETES10" > &nbsp;&nbsp Yes
+            <input type="radio" id="p1" name="DIABETES10" > &nbsp;&nbsp No
+            </td>
+         </tr>
+    </table>
+    <br>
+    <br>
+    <input type="submit" value="submit" name="submit" id="submit">
+    <input type="reset" value="reset" name="reset" id="submit"> <hr>
+        </ul>
+    </form>
+    </body>
+</html>
